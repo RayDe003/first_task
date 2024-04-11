@@ -1,0 +1,29 @@
+.main_block{
+    background-color: #B8A9CF;
+    margin: auto;
+    width: 585px;
+    height: 500px;
+    border-radius: 9px;
+    margin-top: 187px;
+}
+
+.auth_form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    font-size: 20px;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.auth_label{
+    margin-left: 30px;
+    border: none;
+    border-radius: 10px;
+    height: 27px;
+}
+.label-password{
+    margin-left: 21px;
+}
+
+.auth_btn
