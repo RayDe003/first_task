@@ -20,7 +20,7 @@ class Site
 
     public function hello(): string
     {
-        return new View('site.hello', ['message' => 'привет боба хихи']);
+        return new View('site.hello', ['message' => 'привет боба хихи ты админ кста']);
     }
 
     public function signup(Request $request): string
@@ -54,5 +54,9 @@ class Site
     {
         Auth::logout();
         app()->route->redirect('/login');
+    }
+
+    public function libAdd(): string{
+        return new View('site.libAdd');
     }
 }

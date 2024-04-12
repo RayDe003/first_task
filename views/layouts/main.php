@@ -9,24 +9,30 @@
     <title>емае ненавижу этот сайт</title>
 </head>
 <body>
-<header>
-<!--    <nav>-->
-<!--        <a href="--><?php //= app()->route->getUrl('/hello') ?><!--">Главная</a>-->
-<!--        --><?php
-//        if (!app()->auth::check()):
-//            ?>
-<!--            <a href="--><?php //= app()->route->getUrl('/login') ?><!--">Вход</a>-->
-<!--            <a href="--><?php //= app()->route->getUrl('/signup') ?><!--">Регистрация</a>-->
-<!--        --><?php
-//        else:
-//            ?>
-<!--            <a href="--><?php //= app()->route->getUrl('/logout') ?><!--">Выход (--><?php //= app()->auth::user()->name ?><!--)</a>-->
-<!--        --><?php
-//        endif;
-//        ?>
-<!--    </nav>-->
+<?php
+if (app()->auth::check()):
+?>
+<header class="header">
+    <nav class="header_nav wrapper">
+        <div class="header_nav_links">
+            <a class="header_nav_a" href="<?= app()->route->getUrl('/libAdd') ?>">Добавить</a>
+            <!--༼ つ ◕_◕ ༽つ¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯.______.-->
+            <a class="header_nav_a" href="<?= app()->route->getUrl('/login') ?>">Читатели</a>
+            <a class="header_nav_a" href="<?= app()->route->getUrl('/signup') ?>">Книги </a>
+            <a class="header_nav_a" href="<?= app()->route->getUrl('/signup') ?>">Выдача </a>
+        </div>
+
+            <a class="header_nav_a exit" href="<?= app()->route->getUrl('/logout') ?>">Выход(<?= app()->auth::user()->name ?>)</a>
+
+    </nav>
 </header>
-<main>
+        <?php
+endif;
+?>
+
+
+
+<main class="wrapper">
     <?= $content ?? '' ?>
 </main>
 
