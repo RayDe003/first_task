@@ -18,17 +18,17 @@ class Site
     }
 
 
-    public function hello(): string
-    {
-        return new View('site.hello', ['message' => 'привет боба хихи ты админ кста']);
-    }
+//    public function hello(): string
+//    {
+//        return new View('site.hello', ['message' => 'привет боба хихи ты админ кста']);
+//    }
 
-    public function signup(Request $request): string
+    public function newLibrarian(Request $request): string
     {
-        if ($request->method === 'POST' && User::create($request->all())) {
-            app()->route->redirect('/go');
+        if ($request->method==='POST' && User::create($request->all())) {
+            echo 'Пользователь успешно зарегистрирован!';
         }
-        return new View('site.signup');
+        return new View('site.hello');
     }
 
     public function go(Request $request): string

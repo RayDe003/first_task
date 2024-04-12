@@ -53,7 +53,7 @@ class Auth
 
     public static function checkAdmin()
     {
-        if (self::user()->role_id === 1) return true;
+        if (self::user()->role=== 1) return true;
         else return false;
     }
 

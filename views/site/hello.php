@@ -14,6 +14,8 @@
             </div>
             <button class="submit_btn">Добавить</button>
         </form>
+
+        <h3><?= $message ?? ''; ?></h3>
     </div>
 
     <div class="admin_block">
