@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+.main_block{
+    background-color: #B8A9CF;
+    margin: auto;
+    width: 585px;
+    height: 671px;
+    border-radius: 9px;
+    margin-top: 104px;
+}
+
+.auth_form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;;
+    font-size: 20px;
+    margin-top: 100px;
+    background-color: #eae4eb;
+    width: 450px;
+    margin-left: 66px;
+    border-radius: 9px;
+    gap: 20px;
+}
+
+.auth_label{
+    border: none;
+    height: 27px;
+    border-bottom: 2px solid black;
+    background-color: #eae4eb;
+    width: 344px;
+    font-size: 20px;
+}
+
+.auth_btn{
+    height: 30px;
+    border: none;
+    border-radius: 9px;
+    margin-top: 21px;
+}
+
+.auth_btn:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.wrapper{
+    margin: 0 36px;
+}
+
+.auth_title{
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 56px;
+}
+
+.header{
+    background-color: #655978 ;
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header_nav_links {
+    display: flex;
+    gap: 100px;
+}
+
+.header_nav_a{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header_nav_a:hover{
+    color:#F5EFC3;
+}
+
+.exit{
+    position: relative;
+}
+
+.add_lobrarian{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 32px;
+}
+
+.admin_block{
+    background-color: #B8A9CF;
+    width: 500px;
+    height: 600px;
+    border-radius: 9px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin_form{
+    position: relative;
+    bottom: 24px;
+    left: 79px;
+    display: flex;
+    width: 311px;
+    height: 32px;
+}
+
+.submit_btn{
+    border: none;
+    border-radius: 9px;
+    width: 254px;
+    height: 55px;
+    font-size: 15px;
+    position: relative;
+    left: 30px;
+}
+
+.div_form_admin{
+    position: relative;
+    right: 48px;
+    font-size:18px;
+}
+
+.h3_admin{
+    margin: 37px 0 14px;
+}
+
+.admin_add{
+    display: flex;
+    gap: 30px;
+    width: 1035px;
+    position: relative;
+    top: 100px;
+    margin: auto;
+}
+
+.search_input{
+    width: 345px;
+    border: none;
+    border-radius: 9px;
+    height: 30px;
+    margin-top: 28px;
+    padding: 20px;
+}
+
+.search_button{
+    height: 40px;
+    width: 79px;
+    border-radius: 9px;
+    border: none;
+    background-color: white;
+}
